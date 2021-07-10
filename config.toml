@@ -1,0 +1,14 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "FrontendStuff"
+theme = "ezio"
+summaryLength = 10
+paginate = 1
+disqusShortname = "frontendstuff"
+
+[params]
+  Description = "Berbagai macam stuff-stuff untuk Frontend developer, semua stuff yang anda butuhkan sebagai frontend developer ada disini, ayo jelajahi FrontendStuff!!"
+
+# untuk mengganti struktur link
+# [permalinks]
+#   posts = ":slug"

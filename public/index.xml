@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FrontendStuff</title>
+    <link>http://example.org/</link>
+    <description>Recent content on FrontendStuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 Jul 2021 08:56:15 +0700</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Belajar Hugo</title>
+      <link>http://example.org/posts/belajar-hugo/</link>
+      <pubDate>Sat, 10 Jul 2021 08:56:15 +0700</pubDate>
+      
+      <guid>http://example.org/posts/belajar-hugo/</guid>
+      <description>ini adalah post pertama tentang hugo</description>
+    </item>
+    
+  </channel>
+</rss>
