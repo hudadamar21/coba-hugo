@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://huda-coba-hugo.netlify.app"
 languageCode = "en-us"
 title = "FrontendStuff"
 theme = "ezio"
