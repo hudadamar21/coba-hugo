@@ -1,17 +1,16 @@
 ---
-title: "Installation Vuejs dan Tailwindcss"
-description: "Pada tahap ini kalian akan menginstall vuejs dan tailwindcss dengan melakukan setup keseluruhan stuff stuff sampai website dapat ditampilkan."
-date: 2021-07-10T08:56:15+07:00
-draft: false
-thumbnail: "https://firebasestorage.googleapis.com/v0/b/saxtile.appspot.com/o/68eV1uG7dtXIzJ3lNqNphaT23op1%2FInstallation%20Tailwindcss%20jit%20m.png?alt=media&token=61d3848f-2710-45f5-8f0c-6cd6d646ae30"
+title: Installation Vuejs dan Tailwindcss
+description: Pada tahap ini kalian akan menginstall vuejs dan tailwindcss dengan melakukan
+  setup keseluruhan stuff stuff sampai website dapat ditampilkan.
+date: 2021-07-10T08:56:15.000+07:00
+thumbnail: https://firebasestorage.googleapis.com/v0/b/saxtile.appspot.com/o/68eV1uG7dtXIzJ3lNqNphaT23op1%2FInstallation%20Tailwindcss%20jit%20m.png?alt=media&token=61d3848f-2710-45f5-8f0c-6cd6d646ae30
 tags:
 - vuejs
 - tailwindcss
+
 ---
+## Persiapan - Install Nodejs
 
-<br/>
-
-## Persiapan
 Pertama-tama sebelum menginstall Vuejs dan tailwindcss kalian harus menginstall Nodejs dan npm terlabih dahulu.
 
 Install nodejs cukup mudah, kalian hanya perlu download pada laman dibawah ini:
@@ -23,9 +22,11 @@ Install nodejs cukup mudah, kalian hanya perlu download pada laman dibawah ini:
 Setelah menginstall nodejs kalian harus memastikan nodejs dan npm sudah terinstall.
 
 Kalian hanya perlu ketikan baris kode ini di cmd/gitbash
+
 ```bash
 node --version
 ```
+
 ```bash
 npm --version
 ```
@@ -47,21 +48,25 @@ Dengan menggunakan Vitejs kalian dapat menjalankan server dengan sangat cepat ha
 ### Init Vitejs App
 
 ketikan script ini pada cmd/gitbash dan pilih <filename>vue</filename>
+
 ```bash
  npm init @vitejs/app first-vuejs-app
 ```
 
 masuk ke directory <filename>first-vuejs-app</filename>
+
 ```bash
 cd first-vuejs-app
 ```
 
 untuk menginstall semua dependecies yang dibutuhkan
+
 ```bash
 npm install
 ```
 
 untuk menjalankan server vuejs yang akan jalan pada <span class="underline">http://localhost:3000</span>
+
 ```bash
 npm run dev
 ```
@@ -69,15 +74,17 @@ npm run dev
 <br/>
 
 ### First look Vuejs App
+
 ![firstlook-vuejs](/content/firstlook-vuejs-app.png)
 
-
 ## Install Tailwindcss
+
 Setelah menginstall Vuejs sekarang kalian akan menginstall tailwindcss, untuk menginstall tailwind kalian perlu beberapa package tambahan seperti postcss dan autoprefixer.
 
 pastikan kalian sudah berada didalam directory project vuejs.
 
 ketikan script ini di cmd/gitbash:
+
 ```bash
 npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 ```
@@ -87,11 +94,13 @@ npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 ### Membuat file konfigurasi
 
 membuat file <filename>tailwind.config.js</filename> dan <filename>postcss.config.js</filename> secara otomatis dengan mengetikan:
+
 ```bash
 npx tailwindcss init -p
 ```
 
 ini akan membuatkan file <filename>tailwind.config.js</filename>
+
 ```javascript
 module.exports = {
   purge: [],
@@ -107,6 +116,7 @@ module.exports = {
 ```
 
 dan membuatkan file <filename>postcss.config.js</filename> yang sudah memasukan plugin tailwindcss dan autoprefix.
+
 ```javascript
 // postcss.config.js
 module.exports = {
@@ -143,6 +153,7 @@ pada file <filename>tailwind.config.js</filename>, ubah option purge menjadi sep
 ### Masukan Tailwind pada css file
 
 buat dulu file <filename>/src/tailwind.css</filename> dan masukan kode ini.
+
 ```css
 /* ./src/tailwind.css */
 @tailwind base;
@@ -151,6 +162,7 @@ buat dulu file <filename>/src/tailwind.css</filename> dan masukan kode ini.
 ```
 
 pada file <filename>/src/main.js</filename> masukan file <filename>tailwind.css</filename> dengan import
+
 ```javascript
 // src/main.js
 import { createApp } from 'vue'
@@ -158,7 +170,7 @@ import App from './App.vue'
 import './tailwind.css'
 
 createApp(App).mount('#app')
-````
+```
 
 <br/>
 
@@ -183,7 +195,6 @@ export default {
 
 <style>
 </style>
-
 ```
 
 jika tampilkan kalian seperti ini, berarti tailwindcss sudah bisa digunakan. congrats!! :D
@@ -192,6 +203,7 @@ jika tampilkan kalian seperti ini, berarti tailwindcss sudah bisa digunakan. con
 <br/>
 
 ## Kesimpulan
+
 pada tutorial pertama ini kalian menginstall vuejs menggunakan vitejs dan menginstall tailwindcss beserta package pendukungnya seperti postcss dan autoprefixer.
 
 kalian juga sudah mengkonfigurasi tailwindcss, dari mengkonfigurasi agar menghapus css yang tidak terpakai sampai tailwindcss siap untuk digunakan.
