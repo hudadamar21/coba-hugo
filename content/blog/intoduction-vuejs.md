@@ -8,12 +8,6 @@ tags:
 ---
 tutorial Vuejs
 
-\`\`\`javascript
-
-function intro() {
-
-  // ok
-
-}
-
-\`\`\`
+    function intro() {
+       // ok
+     }
